@@ -43,12 +43,12 @@ pub fn main() !void {
 
     // open pipe
     var server = try lib.CommServer.init(allocator);
-    // defer server.deinit();
+    try server.add_socket(socket);
+    defer server.deinit();
 
     server.register_callback(&data_callback);
     try server.run();
 
     // Can we send video to a pipe > on the other end of the pipe ffmpeg is running.
     // - the most important thing rn is getting the video from the client to the server!
-
 }
