@@ -6,7 +6,6 @@
   };
 
   outputs = { 
-    self, 
     nixpkgs,
     zig-overlay,
     zls-overlay,
@@ -24,7 +23,9 @@
       packages = with pkgs; [
         zls
         zig
-        zmqpp
+        
+        zmqpp  # messaging between clients
+        raylib # for the debugger gui
       ];
     };
   };
