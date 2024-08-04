@@ -1,6 +1,6 @@
-# WALL-E Firmware
-
 ![Logo](./res/wall-e-logo.svg)
+
+# WALL-E Firmware
 
 The firmware and related tools for my custom built "WALL-E" robot.
 

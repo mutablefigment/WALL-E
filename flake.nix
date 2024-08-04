@@ -24,8 +24,9 @@
         zls
         zig
         
-        zmqpp  # messaging between clients
-        raylib # for the debugger gui
+        zmqpp   # messaging between clients
+        raylib  # for the debugger gui
+        libavif # for encoding and decoding the video stream 
       ];
     };
   };

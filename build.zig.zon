@@ -15,7 +15,7 @@
     // This field is optional.
     // This is currently advisory only; Zig does not yet do anything
     // with this value.
-    //.minimum_zig_version = "0.11.0",
+    .minimum_zig_version = "0.13.0",
 
     // This field is optional.
     // Each dependency must either provide a `url` and `hash`, or a `path`.
@@ -30,6 +30,10 @@
         .raylib = .{
             .url = "https://github.com/raysan5/raylib/archive/52f2a10db610d0e9f619fd7c521db08a876547d0.tar.gz",
             .hash = "122078ad3e79fb83b45b04bd30fb63aaf936c6774db60095bc6987d325cbe5743373",
+        },
+        .libavif = .{
+            .url = "https://github.com/AOMediaCodec/libavif/archive/refs/tags/v1.1.0.tar.gz",
+            .hash = "122008b172ee3a0f30fefc651e58b279b5cb27857a77150629683d79d1cf9714538e",
         },
     },
     .paths = .{
